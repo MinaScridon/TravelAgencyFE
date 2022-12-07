@@ -1,0 +1,48 @@
+<div class="container">
+    <h3 style="color: rgb(105, 154, 197);">Tour Details</h3>
+    <br>
+
+    <a type="button" class="btn btn-outline-primary" routerLink="/tours">Back</a>
+
+    <br>
+    <br>
+    
+    <table style="color:rgb(247, 243, 243); width: fit-content;" class="center ; table table-bordered border-primary">
+        <thead style="background-color:rgba(139, 134, 134, 0.329) ;">
+            <tr> 
+                <td>ID</td>               
+                <td>TourName</td>
+                <td>DepartureDate</td>
+                <td>ReturnDate</td>
+                <td>PriceForAnAdult</td>
+                <td>PriceForAChild</td>
+                <td>Promoted</td>
+                <td>NumberOfDays</td>
+                <td>NumberOfAdultSeats</td>
+                <td>NumberOfChildSeats</td>
+                <td>Availability</td>
+                <!-- <td>Airports</td>
+                <td>Cities</td>
+                <td>Hotels</td> -->
+            </tr>
+        </thead>
+        <tbody style="background-color:rgba(70, 104, 104, 0.43) ;">
+            <tr> 
+                <td>{{tour.idTour}}</td>               
+                <td>{{tour.tourName}}</td>
+                <td>{{tour.departureDate}}</td>
+                <td>{{tour.returnDate}}</td>
+                <td>{{tour.priceForAnAdult}}</td>
+                <td>{{tour.priceForAChild}}</td>
+                <td>{{tour.promoted}}</td>
+                <td>{{tour.numberOfDays}}</td>
+                <td>{{tour.numberOfAdultSeats}}</td>
+                <td>{{tour.numberOfChildSeats}}</td>
+                <td>{{tour.availability}}</td>
+                <!-- <td>{{tour.airports}}</td>
+                <td>{{tour.cities}}</td>
+                <td>{{tour.hotels}}</td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
