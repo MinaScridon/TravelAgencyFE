@@ -1,0 +1,61 @@
+<div class = "container">
+    <a type="button" class="btn btn-outline-primary" routerLink="/admin">Back</a>
+
+    <br>
+    <br>
+    
+    <h1>Add new tour</h1>
+    <form [formGroup] = "tourForm" (ngSubmit) = "submitForm()">
+        <div class="form-group">
+            <label for="tourName">Tour Name</label>
+            <input type="text" formControlName="tourName" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="departureDate">Departure Date</label>
+            <input type="date" formControlName="departureDate" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="returnDate">Return Date</label>
+            <input type="date" formControlName="returnDate" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="priceForAnAdult">Price For An Adult</label>
+            <input type="number" formControlName="priceForAnAdult" class="form-control">
+        </div>       
+        <div class="form-group">
+            <label for="priceForAChild">Price For A Child</label>
+            <input type="number" formControlName="priceForAChild" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="promoted">Promoted</label>
+            <input type="text" formControlName="promoted" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="numberOfDays">Number Of Days</label>
+            <input type="number" formControlName="numberOfDays" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="numberOfAdultSeats">Number Of Adult Seats</label>
+            <input type="number" formControlName="numberOfAdultSeats" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="numberOfChildSeats">Number Of Child Seats</label>
+            <input type="number" formControlName="numberOfChildSeats" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="availability">Availability</label>
+            <input type="text" formControlName="availability" class="form-control">
+        </div>
+    
+        <!-- <div class="form-group">
+            <label for="imagePath">Image</label>
+            <input id="imagePath" type="file" formControlName="imagePath" class="form-control">
+        </div> -->
+
+        <br>
+
+        <button class="btn btn-outline-secondary" type="submit">Save</button>
+        
+    </form>
+</div>
+

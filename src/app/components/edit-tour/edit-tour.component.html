@@ -1,0 +1,78 @@
+<div class="container">
+    <h1>Edit tour</h1>
+    <form [formGroup]="tourForm" (ngSubmit)="updateForm()">
+        <div class="form-group">
+            <label for="tourName">Name</label>
+            <input type="text" formControlName="tourName" class="form-control" id="tourName" [(ngModel)]="tour.tourName">
+        </div>
+        <div class="form-group">
+            <label for="departureDate">DepartureDate</label>
+            <input type="date" formControlName="departureDate" class="form-control" id="departureDate"
+                [(ngModel)]="tour.departureDate">
+        </div>
+        <div class="form-group">
+            <label for="returnDate">ReturnDate</label>
+            <input type="date" formControlName="returnDate" class="form-control" id="returnDate"
+                [(ngModel)]="tour.returnDate">
+        </div>
+        <div class="form-group">
+            <label for="priceForAnAdult">PriceForAnAdult</label>
+            <input type="number" formControlName="priceForAnAdult" class="form-control" id="priceForAnAdult"
+                [(ngModel)]="tour.priceForAnAdult">
+        </div>
+        <div class="form-group">
+            <label for="priceForAChild">PriceForAChild</label>
+            <input type="number" formControlName="priceForAChild" class="form-control" id="priceForAChild"
+                [(ngModel)]="tour.priceForAChild">
+        </div>
+        <div class="form-group">
+            <label for="promoted">Promoted</label>
+            <input type="text" formControlName="promoted" class="form-control" id="promoted"
+                [(ngModel)]="tour.promoted">
+        </div>
+        <div class="form-group">
+            <label for="numberOfDays">NumberOfDays</label>
+            <input type="number" formControlName="numberOfDays" class="form-control" id="numberOfDays"
+                [(ngModel)]="tour.numberOfDays">
+        </div>
+        <div class="form-group">
+            <label for="numberOfAdultSeats">NumberOfAdultSeats</label>
+            <input type="number" formControlName="numberOfAdultSeats" class="form-control" id="numberOfAdultSeats"
+                [(ngModel)]="tour.numberOfAdultSeats">
+        </div>
+        <div class="form-group">
+            <label for="numberOfChildSeats">NumberOfChildSeats</label>
+            <input type="number" formControlName="numberOfChildSeats" class="form-control" id="numberOfChildSeats"
+                [(ngModel)]="tour.numberOfChildSeats">
+        </div>
+        <div class="form-group">
+            <label for="availability">Availability</label>
+            <input type="text" formControlName="availability" class="form-control" id="availability"
+                [(ngModel)]="tour.availability">
+        </div>
+        <!-- <div class="form-group">
+            <label for="airports">Airports</label>
+            <input type="text" formControlName="airports" class="form-control" id="airports"
+                [(ngModel)]="tour.airports">
+        </div>
+        <div class="form-group">
+            <label for="cities">Cities</label>
+            <input type="text" formControlName="cities" class="form-control" id="cities" [(ngModel)]="tour.cities">
+        </div> -->
+        <!-- <div class="form-group">
+            <label for="hotels">Hotels</label>
+            <input type="text" formControlName="hotels" class="form-control" id="hotels" [(ngModel)]="tour.hotels">
+        </div> -->
+        <!-- <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+        </div> -->
+        <!-- <div class="form-group">
+            <label for="imagePath">Image</label>
+            <input id="imagePath" type="file" formControlName="imagePath" class="form-control" id="imagePath"
+                [(ngModel)]="tour.imagePath">
+        </div> -->
+        <br>
+        <button class="btn btn-outline-secondary" type="submit">Save</button>
+    </form>
+</div>
